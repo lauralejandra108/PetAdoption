@@ -1,0 +1,29 @@
+<template>
+    <template if:true={isLoading}>
+        <lightning-spinner alternative-text="Loading adoption details"></lightning-spinner>
+    </template>
+
+    <template if:true={hasError}>
+        <lightning-card title="Adoption Details">
+            <div class="slds-p-around_medium slds-text-color_error">
+                Error loading adoption details.
+            </div>
+        </lightning-card>
+    </template>
+
+    <template if:true={adoption.data}>
+        <lightning-card title="Adoption Details" icon-name="custom:custom63">
+            <div class="slds-p-around_medium">
+                <p><strong>Contact Name:</strong> {contactName}</p>
+                <p><strong>Contact Age:</strong> {contactAge}</p>
+                <p><strong>Pet Name:</strong> {petName}</p>
+                <p><strong>Pet Breed:</strong> {petBreed}</p>
+                <p><strong>Adoption Date:</strong> {adoptionDate}</p>
+
+                <template if:true={isAdopted}>
+                    <img src={selloImg} alt="Adopted Badge" style="width:100px; height:100px;" />                   
+                </template>
+            </div>
+        </lightning-card>
+    </template>
+</template>

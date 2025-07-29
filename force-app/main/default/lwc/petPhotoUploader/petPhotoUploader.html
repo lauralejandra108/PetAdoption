@@ -1,0 +1,30 @@
+<template>
+  <template if:true={pet}>
+    <template if:true={pet.Photo__c}>
+      <img src={pet.Photo__c} alt="Pet photo" width="200" />
+    </template>
+    <template if:false={pet.Photo__c}>
+      <p>No hay imagen disponible.</p>
+    </template>
+
+    <lightning-input 
+      type="file" 
+      accept="image/*" 
+      label="Subir nueva foto" 
+      onchange={handleFileChange}>
+    </lightning-input>
+
+    <template if:true={fileName}>
+      <p>Archivo seleccionado: {fileName}</p>
+    </template>
+
+    <lightning-button 
+      label="Guardar Foto" 
+      onclick={handleUpload}>
+    </lightning-button>
+  </template>
+
+  <template if:false={pet}>
+    <p>Cargando información...</p>
+  </template>
+</template>
