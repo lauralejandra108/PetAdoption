@@ -1,18 +1,30 @@
-# Salesforce DX Project: Next Steps
+# 🐾 Pet Adoption Salesforce App
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+Una aplicación desarrollada en Salesforce para gestionar el proceso de adopción de mascotas de forma eficiente, intuitiva y automatizada.
 
-## How Do You Plan to Deploy Your Changes?
+## 🚀 Descripción
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+Esta aplicación permite registrar mascotas, gestionar adopciones, generar certificados en PDF y cargar fotos de las mascotas adoptadas. Está diseñada para ONGs o fundaciones que promueven la adopción responsable y el bienestar animal.
 
-## Configure Your Salesforce DX Project
+## 🔧 Tecnologías utilizadas
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+- Salesforce Platform (Lightning Experience)
+- Apex (clases, triggers y servicios REST)
+- Lightning Web Components (LWC)
+- SOQL / SOSL
+- Visualforce (para generación de PDFs)
+- Git / GitHub
 
-## Read All About It
+## 📸 Funcionalidades destacadas
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+- Registro y gestión de mascotas (`Pet__c`)
+- Proceso de adopción con fechas y estados (`Adoption__c`)
+- Subida de fotos de mascotas usando `ContentVersion`
+- Generación de certificados de adopción en PDF
+- Alerta automatizada para próximas vacunaciones con Batch Apex
+- Diseño de interfaz amigable con componentes LWC
+
+## 📂 Estructura del proyecto
+## 🌱 Inspiración
+
+Este proyecto nació del deseo de combinar tecnología con impacto social, facilitando la adopción de animales y promoviendo el cuidado responsable con herramientas digitales.
